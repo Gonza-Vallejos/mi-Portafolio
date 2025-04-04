@@ -4,42 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portafolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>   
 </head>
+
 <body>
-    <header>
-        <h1>¡Hola! Soy Vallejos Gonzalo</h1>
-        <nav>
-            <a href="#about">Sobre mí</a>
-            <a href="#projects">Proyectos</a>
-            <a href="#contact">Contacto</a>
+
+    <header class="header">
+        
+        <a href="#" class="logo">Gonzalo.</a>
+
+        <nav class="navbar"> 
+            <a href="#"  class="active">Home</a>
+            <a href="#">about</a>
+            <a href="#">Services</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contact</a>
         </nav>
+
     </header>
 
-    <section id="about">
-        <h2>Sobre mí</h2>
-        <p>Un poco sobre tu experiencia, habilidades y lo que haces.</p>
+    <section class="home">
+        <div class="home-content">
+            <h1> Hola yo soy Gonzalo Vallejos</h1>
+            <h3>Licenciado en Sistemas</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ratione laudantium nihil fugit excepturi 
+            sapiente,non quia neque rerum magnam praesentium unde odio inventore corporis ipsam,
+            tempora voluptatum. Nobis, odit.</p>
+
+            <div class="btn-box">
+                <a href="#">hire me</a>
+                <a href="#">let's talk</a>
+            </div>   
+        </div>
+
+        <div class="home-sci">
+            <a href="https://www.facebook.com/gonzalo.vallejo.547/"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.instagram.com/gonzavallejos18?igsh=dG55NGhnNG9xemd5"><i class='bx bxl-instagram' ></i></a>
+            <a href="https://www.linkedin.com/in/gonzalo-vallejos-90b173217/"><i class='bx bxl-linkedin' ></i></a>
+        </div>
+
+        <spam class="home-imgHover"></spam>
     </section>
 
-    <section id="projects">
-        <h2>Proyectos</h2>
-        <div class="project-card" onclick="location.href='https://github.com/tuusuario/proyecto1'" style="cursor: pointer;">
-            <img src="images/proyecto1.png" alt="Proyecto 1">
-            <h3>Proyecto 1</h3>
-            <p>Descripción breve del proyecto. Explica las tecnologías usadas y el objetivo.</p>
-        </div>
-        
-        <div class="project-card" onclick="location.href='https://github.com/tuusuario/proyecto2'" style="cursor: pointer;">
-            <img src="images/proyecto2.png" alt="Proyecto 2">
-            <h3>Proyecto 2</h3>
-            <p>Descripción breve del proyecto. Explica las tecnologías usadas y el objetivo.</p>
-        </div>
-    </section>
     
-
-    <footer>
-        <p>© Gonzalo Vallejos 2024</p>
-    </footer>
 </body>
 </html>
 

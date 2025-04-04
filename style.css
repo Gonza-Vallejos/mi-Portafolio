@@ -1,94 +1,247 @@
-body {
-    font-family: Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Popins', sans-serif;
 }
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    text-align: center;
+body {
+    color: #ededed;
 }
 
-nav a {
-    color: white;
-    margin: 0 15px;
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    position: relative;
+    font-size: 25px;
+    color: #ededed;
     text-decoration: none;
+    font-weight: 600;
 }
 
-section {
-    padding: 20px;
-    margin: 10px;
+.logo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
+.navbar a {
+    font-size: 18px;
+    color:  #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
 }
 
-form input, form textarea {
-    display: block;
-    margin: 10px 0;
-    padding: 10px;
+.navbar a:hover,
+.navbar a.active{
+    color: #00abf0;
+}
+
+.home {
+    height: 100vh;
+    background: url('home.jpg') no-repeat;   
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+
+.home-content{
+    max-width: 600px;
+}
+
+.home-content h1 {
+    position: relative;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-content h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: .1s;
+}
+
+.home-content h3 {
+    position: relative;
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+}
+
+.home-content h3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.3s;
+}
+
+.home-content p {
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.home-content .btn-box {
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-box a:hover {
+    color: #00abf0;
+}
+
+
+.btn-box a:nth-child(2){
+    background: transparent;
+    color: #00abf0;
+}
+.btn-box a:nth-child(2):hover {
+    color: #081b29;
+}
+
+.btn-box a:nth-child(2)::before {
+    background: #00abf0;
+}
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #081b29;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover::before{
     width: 100%;
 }
 
-button {
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-}
-
-/*estilo de las tarjetas*/
-#projects {
+.home-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+}
+
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
     align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
 }
 
-.project-card {
-    background-color: #f9f9f9; /* Color de fondo */
-    border: 1px solid #ccc; /* Borde */
-    border-radius: 8px; /* Bordes redondeados */
-    padding: 16px;
-    margin: 16px;
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s; /* Transiciones suaves */
-    width: 300px; /* Ancho de las tarjetas */
+.home-sci a:hover {
+    color: #081b29;
 }
 
-.project-card img {
-    max-width: 100%;
-    height: auto; /* Mantiene la relación de aspecto de la imagen */
-    border-radius: 4px; /* Bordes redondeados para la imagen */
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #00abf0;
+    z-index: -1;
+    transition: .5s;
 }
 
-.project-card h3 {
-    margin: 8px 0; /* Margen superior e inferior */
+.home-sci a:hover::before {
+    width: 100%;
 }
 
-.project-card p {
-    margin: 8px 0 16px; /* Margen inferior */
+
+.home-imgHover {
+    position: absolute;
+    top: 0;
+    right: 30px;
+    width: 500px;
+    height: 100%;
+    background: transparent;
+    transition: .3s;
 }
 
-/* Efecto al pasar el cursor */
-.project-card:hover {
-    transform: translateY(-5px); /* Mueve la tarjeta hacia arriba */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra al pasar el mouse */
+
+.home-imgHover:hover {
+    background: #081b29;
+    opacity: .8;
 }
 
-.project-card a {
-    display: inline-block;
-    margin-top: 10px; /* Margen superior */
-    text-decoration: none; /* Sin subrayado */
-    color: #007BFF; /* Color del enlace */
-    transition: color 0.3s; /* Transición suave para el color */
-}
 
-.project-card a:hover {
-    color: #0056b3; /* Cambia el color al pasar el mouse */
+@keyframes showRight {
+    100% {
+        width: 0;
+    }
 }
