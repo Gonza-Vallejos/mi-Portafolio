@@ -1,0 +1,111 @@
+/* ----------------------------- */
+/* estilos de la pagina CONTACTO */
+/* ------------------------------*/
+
+.contacto {
+    padding: 80px 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #081b29, #081b29, #2c5364);
+    color: #fff;
+  }
+  
+  .contacto-content {
+    max-width: 600px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+  }
+  
+  .contacto-content h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #00abf0;
+  }
+  
+  .contacto-content p {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.1em;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  form label {
+    font-weight: 500;
+  }
+  
+  form input,
+  form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffffff10;
+    color: #fff;
+    font-size: 1em;
+    outline: none;
+    resize: none;
+  }
+  
+  form input:focus,
+  form textarea:focus {
+    background-color: #ffffff20;
+    border: 1px solid #00abf0;
+  }
+  
+  form button {
+    padding: 10px;
+    background-color: #00abf0;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  form button:hover {
+    background-color: #0088cc;
+  }
+  
+  .info-contacto {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .info-contacto p {
+    margin-bottom: 15px;
+    font-size: 1em;
+  }
+  
+  .btn-whatsapp {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #25D366;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 1em;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .btn-whatsapp i {
+    margin-right: 8px;
+    vertical-align: middle;
+    font-size: 1.2em;
+  }
+  
+  .btn-whatsapp:hover {
+    background-color: #1ebe57;
+  }
+  
