@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Proyecto 1 - App de Minibuses</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <header class="header">
+    <a href="index.html" class="logo">Gonzalo.</a>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <nav class="navbar" id="navbar">
+      <a href="index.html">Inicio</a>
+      <a href="sobre_mi.html">Sobre mí</a>
+      <a href="#">Servicios</a>
+      <a href="#">Portfolio</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="proyecto-detalle">
+    <div class="contenido-proyecto">
+      <h1>App de Minibuses</h1>
+      <p>Aplicación web para gestionar reservas de minibuses entre localidades. Incluye login, panel para empresas, y búsqueda de viajes.</p>
+      <img src="img/proyecto1.jpg" alt="Proyecto App de Minibuses" class="img-proyecto">
+
+      <div class="btns-proyecto">
+        <a href="https://github.com/tu_usuario/proyecto1" target="_blank" class="btn-proyecto"><i class='bx bxl-github'></i> GitHub</a>
+        <a href="https://tu-demo.netlify.app" target="_blank" class="btn-proyecto"><i class='bx bx-globe'></i> Ver Demo</a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const navbar = document.getElementById('navbar');
+    toggle.addEventListener('click', () => {
+      navbar.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
