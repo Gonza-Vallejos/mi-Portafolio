@@ -12,6 +12,10 @@ body {
    
 }
 
+/* -------------------- */
+/* Tu estilo original   */
+/* -------------------- */
+
 .header {
     position: fixed;
     top: 0;
@@ -45,6 +49,10 @@ body {
     animation-delay: .4s;
 }
 
+.navbar {
+    display: flex;
+}
+
 .navbar a {
     font-size: 18px;
     color:  #ededed;
@@ -55,9 +63,52 @@ body {
 }
 
 .navbar a:hover,
-.navbar a.active{
+.navbar a.active {
     color: #00abf0;
 }
+
+/* -------------------- */
+/* Responsive agregado  */
+/* -------------------- */
+
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    color: #ededed;
+    cursor: pointer;
+    z-index: 101;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        right: 10%;
+        background: #081b29;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 200px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        display: none;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .navbar a {
+        margin: 10px 0;
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
 
 .home {
     height: 100vh;
