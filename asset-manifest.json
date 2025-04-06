@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/mi-portafolio/static/css/main.ffac315e.chunk.css",
-    "main.js": "/mi-portafolio/static/js/main.8e8d7baf.chunk.js",
-    "main.js.map": "/mi-portafolio/static/js/main.8e8d7baf.chunk.js.map",
-    "runtime~main.js": "/mi-portafolio/static/js/runtime~main.6022f20f.js",
-    "runtime~main.js.map": "/mi-portafolio/static/js/runtime~main.6022f20f.js.map",
-    "static/css/2.2bf599ca.chunk.css": "/mi-portafolio/static/css/2.2bf599ca.chunk.css",
-    "static/js/2.48601e4b.chunk.js": "/mi-portafolio/static/js/2.48601e4b.chunk.js",
-    "static/js/2.48601e4b.chunk.js.map": "/mi-portafolio/static/js/2.48601e4b.chunk.js.map",
-    "static/js/3.730e5367.chunk.js": "/mi-portafolio/static/js/3.730e5367.chunk.js",
-    "static/js/3.730e5367.chunk.js.map": "/mi-portafolio/static/js/3.730e5367.chunk.js.map",
-    "index.html": "/mi-portafolio/index.html",
-    "precache-manifest.5aed94d6922c475bb7355fa9c26a58aa.js": "/mi-portafolio/precache-manifest.5aed94d6922c475bb7355fa9c26a58aa.js",
-    "service-worker.js": "/mi-portafolio/service-worker.js",
-    "static/css/2.2bf599ca.chunk.css.map": "/mi-portafolio/static/css/2.2bf599ca.chunk.css.map",
-    "static/css/main.ffac315e.chunk.css.map": "/mi-portafolio/static/css/main.ffac315e.chunk.css.map",
-    "static/media/boxicons.min.css": "/mi-portafolio/static/media/boxicons.b0bb9677.svg",
-    "static/media/inicio.css": "/mi-portafolio/static/media/home.71701843.jpg"
+    "main.css": "/mi-Portafolio/static/css/main.470d1622.chunk.css",
+    "main.js": "/mi-Portafolio/static/js/main.8e8d7baf.chunk.js",
+    "main.js.map": "/mi-Portafolio/static/js/main.8e8d7baf.chunk.js.map",
+    "runtime~main.js": "/mi-Portafolio/static/js/runtime~main.52843781.js",
+    "runtime~main.js.map": "/mi-Portafolio/static/js/runtime~main.52843781.js.map",
+    "static/css/2.4700f0c7.chunk.css": "/mi-Portafolio/static/css/2.4700f0c7.chunk.css",
+    "static/js/2.48601e4b.chunk.js": "/mi-Portafolio/static/js/2.48601e4b.chunk.js",
+    "static/js/2.48601e4b.chunk.js.map": "/mi-Portafolio/static/js/2.48601e4b.chunk.js.map",
+    "static/js/3.730e5367.chunk.js": "/mi-Portafolio/static/js/3.730e5367.chunk.js",
+    "static/js/3.730e5367.chunk.js.map": "/mi-Portafolio/static/js/3.730e5367.chunk.js.map",
+    "index.html": "/mi-Portafolio/index.html",
+    "precache-manifest.9813adac90ecfe7191f3c66a82faebe1.js": "/mi-Portafolio/precache-manifest.9813adac90ecfe7191f3c66a82faebe1.js",
+    "service-worker.js": "/mi-Portafolio/service-worker.js",
+    "static/css/2.4700f0c7.chunk.css.map": "/mi-Portafolio/static/css/2.4700f0c7.chunk.css.map",
+    "static/css/main.470d1622.chunk.css.map": "/mi-Portafolio/static/css/main.470d1622.chunk.css.map",
+    "static/media/boxicons.min.css": "/mi-Portafolio/static/media/boxicons.b0bb9677.svg",
+    "static/media/inicio.css": "/mi-Portafolio/static/media/home.71701843.jpg"
   }
 }
